@@ -24,6 +24,7 @@ function Detail() {
                 {
                 loading ? <h1>Loading...</h1> : movies
                 }
+                <p>bb</p>
             </div>
         </div>
     )
