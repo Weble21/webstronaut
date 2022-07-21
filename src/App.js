@@ -1,16 +1,23 @@
-import { useState, useEffect } from "react";
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route,
+ } from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
 
-
-function App() { 
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    fetch("https://api.coinpaprika.com/v1/tickers");
-  }, [])
+function App() {
   return (
-    <div>
-      <h1>The Coins!</h1>
-      {loading ? <strong>Loading...</strong> : null}
-    </div>
+  <Router>
+    <Switch>
+      <Route path="/movie/:id">
+        <Detail />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
+  </Router>
   );
 }
 
