@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/webstronaut/static/js/main.784b57f8.js",
+    "index.html": "/webstronaut/index.html",
+    "main.784b57f8.js.map": "/webstronaut/static/js/main.784b57f8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.784b57f8.js"
+  ]
+}
